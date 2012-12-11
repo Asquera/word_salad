@@ -2,7 +2,6 @@ class Fixnum
 
   # Returns +num+ random words from the dictionary.
   def words
-    dict = WordSalad.dictionary
     (1..self).to_a.map do |x|
       WordSalad.words[rand(WordSalad.size)].strip
     end
